@@ -37,11 +37,11 @@ function Dashboard(props) {
         <div>
             <Toolbar />
             <Divider />
-            <Link to="/appointment"><Button color="inherit">Appointment</Button></Link>
-            <Link to="/dashboard"><Button color="inherit">Dashboard</Button></Link>
+            <Link to="/appointment" style={{ textDecoration: 'none' }} ><Button color="inherit">Appointment</Button></Link>
+            <Link to="/dashboard" style={{ textDecoration: 'none' }} ><Button color="inherit">Dashboard</Button></Link>
             {admin && <Box>
-                <Link to={`/dashboard/makeAdmin`}><Button color="inherit">Make Admin</Button></Link>
-                <Link to={`/dashboard/addDoctor`}><Button color="inherit">Add Doctor</Button></Link>
+                <Link to={`/dashboard/makeAdmin`} style={{ textDecoration: 'none' }} ><Button color="inherit">Make Admin</Button></Link>
+                <Link to={`/dashboard/addDoctor`} style={{ textDecoration: 'none' }} ><Button color="inherit">Add Doctor</Button></Link>
             </Box>}
             <List>
                 {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
